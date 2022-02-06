@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background: #000;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main span{
+    margin: .2em;
+
+    font-size: 4em;
+
+    text-transform: uppercase;
+
+    animation: txt 1s infinite alternate;
+
+    transition: 0.1s;
+}
+.main span:nth-child(2){
+    animation-delay: 0.2s;
+    filter: hue-rotate(50deg);
+}
+.main span:nth-child(3){
+    animation-delay: 0.3s;
+    filter: hue-rotate(120deg);
+}
+.main span:nth-child(4){
+    animation-delay: 0.4s;
+    filter: hue-rotate(180deg);
+}
+.main span:nth-child(5){
+    animation-delay: 0.5s;
+    filter: hue-rotate(220deg);
+}
+.main span:nth-child(6){
+    animation-delay: .6s;
+    filter: hue-rotate(280deg);
+}
+.main span:nth-child(7){
+    animation-delay: .7s;
+    filter: hue-rotate(320deg);
+}
+.main span:nth-child(8){
+    animation-delay: .8s;
+    filter: hue-rotate(340deg);
+}
+.main span:nth-child(9){
+    animation-delay: .9s;
+    filter: hue-rotate(160deg);
+}
+.main span:nth-child(10){
+    animation-delay: 1s;
+    filter: hue-rotate(40deg);
+}
+@keyframes txt {
+    0%{
+        color: white;
+    }
+    100%{
+        text-shadow: 0 0 10px #ff3177,
+                     0 0 20px #ff3177,
+                     0 0 40px #ff3177,
+                     0 0 80px #ff3177,
+                     0 0 160px #ff3177;
+
+        font-size: 5em;
+
+        color: white;
+
+    }
+}
+@media only screen and (max-width:480px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main span{
+        font-size: 1em;
+
+        margin: 0.2em;
+    }
+    @keyframes txt {
+        0%{
+            color: white;
+        }
+        100%{
+            text-shadow: 0 0 10px #ff3177,
+                         0 0 20px #ff3177,
+                         0 0 40px #ff3177,
+                         0 0 80px #ff3177,
+                         0 0 160px #ff3177;
+    
+            font-size: 2em;
+    
+            color: white;
+    
+        }
+    }
+}
